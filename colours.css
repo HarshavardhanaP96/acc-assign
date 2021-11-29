@@ -1,0 +1,135 @@
+@charset "uft-8";
+*
+{
+    padding:0px;
+    margin: 0px;
+
+}
+#content {
+    height: 100vh;
+	width: 75vw;
+    margin-left: 10%;
+    margin-top: 0%;
+}
+.subt{
+    padding-top: 5pt;
+}
+.assign_title{
+    padding-top: auto;
+    height: 6vh; 
+}
+.text{
+    height: 15pt;
+    padding-top: 15pt;
+}
+
+.colour{
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+}
+.colour1{
+    display: flex;
+    background-color: green;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.colour1>div{
+    display: flex;
+    height: 20px;
+    width: 30px;
+    background-color:red ;
+
+}
+.row1_red{
+    background-color: red;
+    flex: 50%;
+}
+.row1_blue{
+    background-color:blue;
+    flex: 50%;
+}
+.row2_green{
+    background-color:green;
+    flex: 90%;
+}
+.row2_blue{
+    background-color:blue;
+    flex: 10%;
+}
+.row3_red{
+    background-color:red;
+    flex: 10%;
+}
+.row3_green{
+    background-color:green;
+    flex: 80%;
+}
+.row3_blue{
+    background-color:blue;
+    flex: 10%;
+}
+.row4_red{
+    background-color:red;
+    flex: 90%;
+}
+.row4_blue{
+    background-color:blue;
+    flex: 10%;
+}
+
+.row6_red{
+    background-color:red;
+    flex: 45%;
+}
+.row6_blue{
+    background-color:blue;
+    flex: 10%;
+}
+.row6_red{
+    background-color:red;
+    flex: 45%;
+}
+
+.row7_red{
+    background-color:red;
+    flex: 10%;
+}
+.row7_blue{
+    background-color:blue;
+    flex: 90%;
+}
+.row7_blue>div{
+    background-color: green;
+    height: 10px;
+    margin-top: 10px;
+}
+.row8_yellow{
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+    height: 30px;
+}
+.row8_yellow>div{
+    display: flex;
+    background-color:green;
+    height: 30px;
+    width: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.row9_yellow{
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+    height: 30px;
+}
+.row9_yellow>div{
+    display: flex;
+    background-color:green;
+    height: 30px;
+    width: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
