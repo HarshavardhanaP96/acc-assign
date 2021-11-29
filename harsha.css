@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	padding:0px;
+	margin:0px;
+}
+#main
+{
+	height: 100vh;
+	width: 100vw;
+}
+#para
+{
+	height:auto;
+}
+.wrapper
+{
+	margin: 0 auto;
+	width:80%;
+}
+
+#btndiv
+{
+	
+	
+}
+#gridContainer
+{
+	height:40vh;
+	
+	width:80%;
+	padding:30px;
+	box-sizing: border-box;
+	display: grid;
+  	grid-template-columns: auto auto auto;
+  
+}
+.btn {
+  width: 100%;
+	height: 100%;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  
+  font-size: 30px;
+  text-align: center;
+}
