@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @charset "UTF-8";
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            height: 100vh;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: aqua;
+        }
+        .row1{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+            height: 10%;
+            width: 100%;
+            background-color: red;
+            justify-content: space-around;
+            grid-gap: 2px;
+        }
+        .row1>div{
+            margin-top: 15%;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            text-align: center;
+            line-height: 50px;
+        }
+        .table{
+            display: flex;
+            height: 90%;
+            width: 100%;
+        }
+        .column1{
+            display: grid;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+            height:100%;
+            width: 9%;
+            background-color: red;
+            justify-content: space-around;
+            grid-gap: 5px;
+        }
+        .column1>div{
+            margin-top: 20%;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .table_container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+            height: 100%;
+            width: 91%;
+            background-color: red;
+            justify-content: space-around;
+            grid-row-gap: 0.05px;
+        }
+        .table_container>div{
+            margin-top: 15%;
+            margin-bottom: 6%;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div></div>
+        </div>
+        <div class="table">
+            <div class="column1">
+
+            </div>
+            <div class="table_container">
+    
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        let rnums=document.querySelector(".row1");
+        var size=50;
+        for(let i=1;i<=10;i++){
+            let tag=document.createElement("div");
+            tag.appendChild(document.createTextNode(i));
+            tag.style.fontSize=size+"px";
+            rnums.appendChild(tag);
+        }
+    
+        let cnums=document.querySelector(".column1");
+        size=50;
+        for(let j=2;j<=10;j++){
+            let ctag=document.createElement("div");
+            ctag.appendChild(document.createTextNode(j));
+            ctag.style.fontSize=size+"px";
+            cnums.appendChild(ctag);
+        }
+
+        let ctnums=document.querySelector(".table_container");
+        let cid=1;
+        for(let m=2;m<=10;m++){
+            for(let n=1;n<=10;n++){
+                let cttag=document.createElement("div");
+                cttag.id=cid;
+                ctnums.appendChild(cttag);
+                console.log(cttag.id);
+                cid++;
+            }
+        }
+        cid=1;
+        let cars=["red","blue", "brown","purple","voilet","green","black","pink","grey","white"]
+        size=20;
+        let m=2;
+        let hi=window.setInterval (printR1,5000);
+        function printR1() {
+            for(let n=1;n<=10;n++){
+                let txt=document.getElementById(cid);
+                txt.appendChild(document.createTextNode(m*n));
+                txt.style.fontSize=size+"px";
+                txt.style.color= cars[m-1];
+                // let prod=n*m;
+                // txt.innerHTML+=prod;(additional)
+                // cttag.appendChild(document.createTextNode(m*n));
+                // cttag.style.fontSize=size+"px";
+                // let node = document.createTextNode ('prod');
+                // txt.appendChild(node);
+                cid++;      
+            }
+            size=size+1.5;
+            m++;
+        }
+        window.setTimeout(() => {
+            window.clearInterval(hi);
+            
+        }, 50000);
+ 
+    </script>
+</body>
+</html>
